@@ -7,6 +7,8 @@ import Login from './telas/Login';
 import Home from './telas/Home';
 import Alunos from './telas/Alunos';
 import CadastrarDisciplina from './telas/CadastrarDisciplina';
+import CadastrarAlunos from './telas/CadastrarAlunos'
+import EditarDados from './telas/EditarDados'
 
 
 const Stack = createNativeStackNavigator();
@@ -32,6 +34,16 @@ function Rotas() {
               <Stack.Screen 
             name="CadastrarDisciplina"
             component={CadastrarDisciplina}
+         
+            />
+            <Stack.Screen 
+            name="CadastrarAlunos"
+            component={CadastrarAlunos}
+         
+            />
+                 <Stack.Screen 
+            name="EditarDados"
+            component={EditarDados}
          
             />
           

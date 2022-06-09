@@ -1,9 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image} from 'react-native';
 import Aluno from '../../Componentes/Aluno';
+import { useNavigation } from '@react-navigation/native'
 
 export default function Alunos() {
+  const navigation = useNavigation();
  return (
+   
    <View style={estilos.container}>
        
      <View style={estilos.espacoLogo}>
@@ -13,11 +16,11 @@ export default function Alunos() {
                 style={estilos.logo}
                 resizeMode="contain"
                 />
-       <TouchableOpacity style={estilos.btn}>
+       <TouchableOpacity style={estilos.btn} onPress={() => navigation.navigate('EditarDados')}>
             <Text style={estilos.textoBtn}> Editar Dados </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={estilos.btn}>
-            <Text style={estilos.textoBtn}> Cadastrar Alunos</Text>
+        <TouchableOpacity style={estilos.btn} onPress={() => navigation.navigate('CadastrarAlunos')}>
+            <Text style={estilos.textoBtn} > Cadastrar Alunos</Text>
         </TouchableOpacity>
       
      </View>

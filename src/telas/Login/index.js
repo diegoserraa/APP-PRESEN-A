@@ -8,7 +8,7 @@ return (
 <SafeAreaView style={estilos.container}>
             <View style={estilos.espacoLogo}>
                 <Image 
-                source={require('../../../assets/logoLogin.png')}
+                source={require('../../../assets/logo.png')}
                 style={estilos.logo}
                 resizeMode="contain"
                 />

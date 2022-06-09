@@ -6,7 +6,7 @@ import { View, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, TextInpu
 
 
 
-export default function CadastrarDisciplina(){
+export default function CadastrarAlunos(){
     const navigation = useNavigation();
 return <>
 
@@ -23,14 +23,21 @@ return <>
           <Text style={estilos.label}>Nome:</Text>
             <TextInput 
             style={estilos.input}
-            placeholder="Digite o nome da disciplina..."
+            placeholder="Digite o nome..."
+            value = "Tassio Sirqueira"
             />
 
-            <Text style={estilos.label}>Descrição:</Text>
+            <Text style={estilos.label}>Email:</Text>
             <TextInput 
             style={estilos.input}
-            placeholder="Digite uma pequena descrição..."
-          
+            placeholder="Digite o email..."
+            value = "Tassio@hotmail.com"
+            />
+             <Text style={estilos.label}>Data Nascimento:</Text>
+            <TextInput 
+            style={estilos.input}
+            placeholder="Digite sua Matricula..."
+            value = "20/10/1990"
             />
              <TouchableOpacity onPress={() => navigation.navigate('Home')} style={estilos.botao}>
                 <Text style={estilos.textoBotao}>Salvar</Text>

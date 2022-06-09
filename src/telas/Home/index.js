@@ -16,11 +16,11 @@ return <>
                 style={estilos.logo}
                 resizeMode="contain"
                 />
-            <TouchableOpacity style={estilos.btn}>
+            <TouchableOpacity style={estilos.btn} onPress={() => navigation.navigate('EditarDados')}>
                 <Text style={estilos.textoBtn}> Editar Dados </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={estilos.btn}>
-                <Text style={estilos.textoBtn} onPress={() => navigation.navigate('CadastrarDisciplina')}> Cadastrar Disciplinas</Text>
+            <TouchableOpacity style={estilos.btn} onPress={() => navigation.navigate('CadastrarDisciplina')}>
+                <Text style={estilos.textoBtn} > Cadastrar Disciplinas</Text>
             </TouchableOpacity>
             </View>
             <ScrollView >
